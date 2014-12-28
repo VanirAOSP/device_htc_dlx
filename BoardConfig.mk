@@ -95,7 +95,6 @@ BOARD_SEPOLICY_UNION += \
     file_contexts \
     hcheck.te \
     init.te \
-    init_shell.te \
     mediaserver.te \
     mm-qcamerad.te \
     mpdecision.te \
@@ -107,7 +106,6 @@ BOARD_SEPOLICY_UNION += \
     system_server.te \
     tee.te \
     thermald.te \
-    ueventd.te \
     vold.te \
     wpa.te
 
