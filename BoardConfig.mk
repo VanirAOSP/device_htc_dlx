@@ -27,6 +27,7 @@
 #Hack to fix build
 PRODUCT_AAPT_CONFIG := normal large hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
+LACKS_FM := true
 
 # inherit from common msm8960
 include device/htc/msm8960-common/BoardConfigCommon.mk
