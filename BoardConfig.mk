@@ -24,6 +24,10 @@
 # variant, so that it gets overwritten by the parent (which goes
 # against the traditional rules of inheritance).
 
+#Hack to fix build
+PRODUCT_AAPT_CONFIG := normal large hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
+
 # inherit from common msm8960
 include device/htc/msm8960-common/BoardConfigCommon.mk
 
@@ -49,7 +53,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=dlx user_debug=0 androidboot.bootdevice=msm_sdcc.1
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
 TARGET_KERNEL_CONFIG := cyanogenmod_dlx_defconfig
-TARGET_KERNEL_SOURCE := kernel/htc/m7
+TARGET_KERNEL_SOURCE := kernel/htc/dlx
 
 # Audio
 BOARD_USES_FLUENCE_INCALL := true
