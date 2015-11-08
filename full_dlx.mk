@@ -116,6 +116,10 @@ PRODUCT_PACKAGES += \
         libgps.utils \
         gps.msm8960
 
+# HTC Symbols
+PRODUCT_PACKAGES += \
+        libhtc_symbols
+
 # NFC
 PRODUCT_PACKAGES += \
     nfc.msm8960 \
@@ -125,6 +129,10 @@ PRODUCT_PACKAGES += \
     Nfc \
     Tag \
     com.android.nfc_extras
+
+# SSL Compat
+PRODUCT_PACKAGES += \
+    libboringssl-compat
 
 # We have enough space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
